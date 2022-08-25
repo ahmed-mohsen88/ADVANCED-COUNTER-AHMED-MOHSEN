@@ -1,0 +1,45 @@
+      .container {
+        background-color: #b8996d;
+        margin: 90px auto;
+        display: block;
+        width: 40%;
+        height: 500px;
+        text-align: center;
+      }
+      .content {
+        background-color: #b6956a;
+        display: inline-flex;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        border: 1px solid white;
+        height: 70%;
+        margin-top: 30px;
+        width: 90%;
+        height: 90%;
+      }
+      .content * {
+        margin: 10px;
+      }
+      #count {
+        color: green;
+        font-size: 200px;
+        margin: auto;
+      }
+      .but {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+      }
+      .but * {
+        font-size: 18px;
+        color: white;
+        background-color: #0d2c54;
+      }
+      .but *:hover {
+        cursor: pointer;
+      }

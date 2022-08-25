@@ -18,7 +18,7 @@
       }
 
       auto_add.onclick = () => {
-        if(y){
+        if(x){
           return false
         }else{
          clearInterval(y);
@@ -32,7 +32,7 @@
 
       auto_sub.onclick = () => {
         if(y){
-          
+          return false;
         }else{
            clearInterval(x);
         y = setInterval(min, 1000);
@@ -41,7 +41,7 @@
 
       stopp.onclick = () => {
         clearInterval(x);
-        x=false;
+        x=null;
         clearInterval(y);
-        y=false;
+        y=null;
       }

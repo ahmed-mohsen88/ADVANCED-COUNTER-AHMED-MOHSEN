@@ -18,8 +18,12 @@
       }
 
       auto_add.onclick = () => {
-        clearInterval(y);
-        x = setInterval(plus, 1000);
+        if(y){
+          return false
+        }else{
+         clearInterval(y);
+         x = setInterval(plus, 1000);
+        }
       };
 
       function min() {
@@ -27,11 +31,17 @@
       }
 
       auto_sub.onclick = () => {
-        clearInterval(x);
+        if(y){
+          
+        }else{
+           clearInterval(x);
         y = setInterval(min, 1000);
+        }
       };
 
       stopp.onclick = () => {
         clearInterval(x);
+        x=false;
         clearInterval(y);
-      };
+        y=false;
+      }
